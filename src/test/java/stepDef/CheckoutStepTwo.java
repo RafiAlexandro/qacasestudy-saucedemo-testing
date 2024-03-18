@@ -1,8 +1,6 @@
 package stepDef;
 
 import config.env_target;
-import io.cucumber.java.sl.In;
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import io.cucumber.java.en.And;
@@ -19,7 +17,6 @@ import java.util.List;
 public class CheckoutStepTwo extends env_target {
     @Given("User in the product page")
     public void userInTheProductPage() {
-        System.setProperty("webdriver.chrome.driver","src/test/resources/drivers/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(productsUrl);

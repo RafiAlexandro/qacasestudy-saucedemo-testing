@@ -18,7 +18,6 @@ import java.util.List;
 public class productsCart extends env_target {
     @Given("User on the login page")
     public void userOnTheLoginPage() {
-        System.setProperty("webdriver.chrome.driver","src/test/resources/drivers/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(baseUrl);

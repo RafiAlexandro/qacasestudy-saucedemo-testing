@@ -15,7 +15,6 @@ import java.time.Duration;
 public class Footer extends env_target {
     @Given("User is on a login page")
     public void userIsOnALoginPage() {
-        System.setProperty("webdriver.chrome.driver","src/test/resources/drivers/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(baseUrl);

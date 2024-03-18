@@ -17,7 +17,6 @@ import java.time.Duration;
 public class Login extends env_target {
     @Given("User is already on login page")
     public void userIsAlreadyOnLoginPage() {
-        System.setProperty("webdriver.chrome.driver","src/test/resources/drivers/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(baseUrl);
@@ -41,6 +40,7 @@ public class Login extends env_target {
         wait.until(
                 ExpectedConditions.textToBe(By.xpath("//*[@id=\"login_button_container\"]/div/form/h3"),"Epic sadface: Username and password are required")
         );
+        driver.quit();
     }
 
     @When("User input invalid username and correct password")
@@ -56,6 +56,7 @@ public class Login extends env_target {
         wait.until(
                 ExpectedConditions.textToBe(By.xpath("//*[@id=\"login_button_container\"]/div/form/h3"),"Epic sadface: Username and password do not match any user in this service")
         );
+        driver.quit();
     }
 
     @And("User input correct username and invalid password")
@@ -76,6 +77,7 @@ public class Login extends env_target {
         wait.until(
                 ExpectedConditions.textToBe(By.xpath("//*[@id=\"login_button_container\"]/div/form/h3"),"Epic sadface: Password is required")
         );
+        driver.quit();
     }
 
     @When("User input correct password")
@@ -90,6 +92,7 @@ public class Login extends env_target {
         wait.until(
                 ExpectedConditions.textToBe(By.xpath("//*[@id=\"login_button_container\"]/div/form/h3"),"Epic sadface: Username is required")
         );
+        driver.quit();
     }
 
     @When("User input username and password")
@@ -106,6 +109,7 @@ public class Login extends env_target {
         wait.until(
                 ExpectedConditions.urlToBe("https://www.saucedemo.com/v1/inventory.html")
         );
+        driver.quit();
     }
 
 
