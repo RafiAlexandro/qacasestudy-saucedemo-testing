@@ -32,5 +32,4 @@ Website url: https://www.saucedemo.com/v1/
 - Run automated tests via package runner
 
 # Sample Run Test:
-
-
+https://github.com/RafiAlexandro/qacasestudy-saucedemo-testing/assets/50567750/e664f461-66c5-4ae0-871c-32a95f14daa2
