@@ -4,9 +4,9 @@
 Website url: https://www.saucedemo.com/v1/
 
 # Reports:
-- Test case url: https://docs.google.com/spreadsheets/d/1y1tFPFvD__XX4GN14Z9oKuYCjdaQO0B567NMCnyIk6c/edit?usp=sharing
+- Test case url: https://docs.google.com/spreadsheets/d/1y1tFPFvD__XX4GN14Z9oKuYCjdaQO0B567NMCnyIk6c/edit?usp=sharing (SauceDemo Test Case Sheet)
+- Bug report url: https://docs.google.com/spreadsheets/d/1y1tFPFvD__XX4GN14Z9oKuYCjdaQO0B567NMCnyIk6c/edit?usp=sharing (SauceDemo Bug Report Sheet)
 - Test evidence url: https://docs.google.com/document/d/1nOoujovq6eVPZy30ZO22BjBvdLwDfuJxjNYb1O23mSQ/edit?usp=sharing
-- Bug report url: 
   
 # Tools and Dependencies: 
 - Maven
